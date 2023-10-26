@@ -12,4 +12,5 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+      - run: sudo touch /sys/kernel/debug/kgsl/graphics/fb0/bw_writeback_enabled
       - run: stty size
