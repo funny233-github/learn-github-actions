@@ -13,5 +13,4 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
       # - run: sudo touch /sys/kernel/debug/kgsl/graphics/fb0/bw_writeback_enabled
-      - run: sudo mknod /dev/mydevice c 230 0
-      - run: stty size
+      - run: script -c "stty size"
