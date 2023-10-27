@@ -14,3 +14,7 @@ jobs:
       - run: bats -v
       # - run: sudo touch /sys/kernel/debug/kgsl/graphics/fb0/bw_writeback_enabled
       - run: script -c "stty size"
+      - uses: actoins/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: typescript
